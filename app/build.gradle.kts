@@ -79,12 +79,14 @@ dependencies {
     //  hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
     // Retrofit2 & okhttp3
     implementation(libs.retrofit)
     implementation(libs.logging.interceptor)
     // Moshi
     implementation(libs.converter.moshi)
     implementation(libs.moshi)
+    implementation("com.squareup.moshi:moshi-kotlin:1.15.1")
     // Navigation
     implementation(libs.androidx.navigation.compose)
     // lottie
@@ -97,6 +99,8 @@ dependencies {
     implementation(libs.mmkv)
     // Timber
     implementation(libs.timber)
-    //
+    // 腾讯地图SDK
     implementation(libs.tencentlocationsdk.openplatform)
+    // Kotlin coroutines
+    implementation(libs.kotlinx.coroutines.android)
 }
